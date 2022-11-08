@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Car Glow</string>
+    <string-array name="light_pattern_array">
+        <item>1. Solid color</item>
+        <item>2. Slow pulsing colors</item>
+        <item>3. Traveling colors - cycle cw</item>
+        <item>4. Traveling colors - cycle ccw</item>
+        <item>5. Traveling colors - front to back</item>
+    </string-array>
+</resources>

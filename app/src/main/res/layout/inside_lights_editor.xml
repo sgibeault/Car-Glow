@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/led_1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/led_1_remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="X"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/led_1"
+        app:layout_constraintStart_toStartOf="@+id/led_1"
+        app:layout_constraintTop_toBottomOf="@+id/led_1" />
+
+    <Button
+        android:id="@+id/led_2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/led_3"
+        app:layout_constraintStart_toEndOf="@+id/led_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/led_2_remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="X"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/led_2"
+        app:layout_constraintStart_toStartOf="@+id/led_2"
+        app:layout_constraintTop_toBottomOf="@+id/led_2" />
+
+    <Button
+        android:id="@+id/led_3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/led_3_remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="X"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/led_3"
+        app:layout_constraintStart_toStartOf="@+id/led_3"
+        app:layout_constraintTop_toBottomOf="@+id/led_3" />
+
+    <Button
+        android:id="@+id/led_4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/led_5"
+        app:layout_constraintStart_toEndOf="@+id/led_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/led_4_remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="X"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/led_4"
+        app:layout_constraintStart_toStartOf="@+id/led_4"
+        app:layout_constraintTop_toBottomOf="@+id/led_4" />
+
+    <Button
+        android:id="@+id/led_5"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/led_5_remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="X"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/led_5"
+        app:layout_constraintStart_toStartOf="@+id/led_5"
+        app:layout_constraintTop_toBottomOf="@+id/led_5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="☼"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bright_seekbar"
+        app:layout_constraintEnd_toStartOf="@+id/bright_seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bright_seekbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="R"
+        app:layout_constraintBottom_toBottomOf="@+id/r_seekbar"
+        app:layout_constraintEnd_toStartOf="@+id/r_seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/r_seekbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="G"
+        app:layout_constraintBottom_toBottomOf="@+id/g_seekbar"
+        app:layout_constraintEnd_toStartOf="@+id/g_seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/g_seekbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="B"
+        app:layout_constraintBottom_toBottomOf="@+id/b_seekbar"
+        app:layout_constraintEnd_toStartOf="@+id/b_seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_seekbar" />
+
+    <SeekBar
+        android:id="@+id/r_seekbar"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:progressTint="#FF0000"
+        android:thumbTint="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/g_seekbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/g_seekbar"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:progressTint="#00FF00"
+        android:thumbTint="#00FF00"
+        app:layout_constraintBottom_toTopOf="@+id/b_seekbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/b_seekbar"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:progressTint="#0000FF"
+        android:thumbTint="#0000FF"
+        app:layout_constraintBottom_toTopOf="@+id/bright_seekbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/bright_seekbar"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="16dp"
+        android:progressTint="#949494"
+        android:thumbTint="#949494"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/led_3" />
+
+    <Spinner
+        android:id="@+id/light_pattern_spinner"
+        android:layout_width="263dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/savebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bright_seekbar" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save new pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
